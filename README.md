@@ -9,12 +9,12 @@ To provide a seamless, high-quality resume building experience where the user fo
 
 ### Infrastructure & Orchestration
 - **Monorepo Manager**: **TurboRepo**.
-- **Database**: **TanStack DB** (Reactive client store for fast, modern, and responsive data management).
+- **Database**: **TanStack DB** (Planned/TBD - Reactive client store for fast, modern, and responsive data management).
 - **Language**: TypeScript (End-to-end).
 
 ### Frontend
-- **Framework**: React.js (TypeScript)
-- **Styling**: Vanilla CSS.
+- **Framework**: React.js + Vite (TypeScript)
+- **Styling**: Vanilla CSS with TailwindCSS & DaisyUI.
 - **Features**: 
     - **Login Page**: Secure user authentication.
     - **Admin Dashboard**: Upload and manage LaTeX templates.
@@ -22,11 +22,11 @@ To provide a seamless, high-quality resume building experience where the user fo
     - **Live Preview**: Real-time rendering of resume data into selected templates.
 
 ### Services Architecture
-1. **Gateway Service (Orchestrator)**:
-    - **Framework**: Node.js (TypeScript)
-    - **Role**: Sits between the React frontend and the Fastify AI Backend. 
+1. **Gateway Service (Orchestrator - `apps/gateway`)**:
+    - **Framework**: Node.js + Fastify (TypeScript)
+    - **Role**: Sits between the React frontend and the AI Backend. 
     - **Authentication**: JWT-based auth or integration with an auth provider (e.g., Auth0/Clerk). Handles session management and secures all downstream requests.
-2. **AI Backend**:
+2. **AI Backend (`apps/ai-backend`)**:
     - **Framework**: Node.js + Fastify (TypeScript)
     - **Role**: Communicates with the LLM (Gemini API). Handles PDF parsing and precise template formatting logic.
 
@@ -39,9 +39,11 @@ To provide a seamless, high-quality resume building experience where the user fo
 ## Task-by-Task Roadmap
 
 ### Task 1: Foundation & Project Setup
-- Initialize Next.js with TypeScript.
+- Initialize TurboRepo workspace.
+- Setup React + Vite for Frontend.
+- Setup Fastify for Gateway and AI Backend services.
+- Define shared packages and types.
 - Define the global CSS design system.
-- Setup API routes for PDF handling and AI communication.
 
 ### Task 2: Resume Parsing Engine
 - Implement the PDF upload endpoint.

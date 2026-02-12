@@ -5,7 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./themes/stitch.css";
+
 
 :root {
   font-family: 'Google Sans', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;

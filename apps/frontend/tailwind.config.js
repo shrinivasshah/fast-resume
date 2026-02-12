@@ -15,23 +15,69 @@ export default {
     require('daisyui'),
   ],
   daisyui: {
-    // Enabled themes - stitch is our custom theme, light as fallback
     themes: [
-      "stitch",  // Custom Stitch theme (Google Material Design inspired)
-      "light",   // DaisyUI default light theme
+      {
+        stitch: {
+          "color-scheme": "light",
+          "primary": "oklch(56.2% 0.215 250.8)",
+          "primary-content": "oklch(100% 0 0)",
+          "secondary": "oklch(94.5% 0.025 251)",
+          "secondary-content": "oklch(56.2% 0.215 250.8)",
+          "accent": "oklch(62.8% 0.257 27.3)",
+          "accent-content": "oklch(100% 0 0)",
+          "neutral": "oklch(31.3% 0.006 247)",
+          "neutral-content": "oklch(100% 0 0)",
+          "base-100": "oklch(100% 0 0)",
+          "base-200": "oklch(98% 0.002 247)",
+          "base-300": "oklch(95% 0.004 247)",
+          "base-content": "oklch(16% 0.004 247)",
+          "info": "oklch(66.9% 0.179 251.2)",
+          "info-content": "oklch(100% 0 0)",
+          "success": "oklch(61.5% 0.177 145.5)",
+          "success-content": "oklch(100% 0 0)",
+          "warning": "oklch(85.4% 0.199 99.6)",
+          "warning-content": "oklch(16% 0.004 247)",
+          "error": "oklch(62.8% 0.257 27.3)",
+          "error-content": "oklch(100% 0 0)",
+          "--rounded-box": "1rem",
+          "--rounded-btn": "1.9rem",
+          "--rounded-badge": "1.9rem",
+          "--rounded-field": "0.5rem",
+          "--tab-radius": "0.5rem",
+        },
+        "stitch-dark": {
+          "color-scheme": "dark",
+          "primary": "oklch(56.2% 0.215 250.8)",
+          "primary-content": "oklch(100% 0 0)",
+          "secondary": "oklch(25% 0.025 251)",
+          "secondary-content": "oklch(90% 0.05 251)",
+          "accent": "oklch(62.8% 0.257 27.3)",
+          "accent-content": "oklch(100% 0 0)",
+          "neutral": "oklch(20% 0.006 247)",
+          "neutral-content": "oklch(100% 0 0)",
+          "base-100": "oklch(16% 0.004 247)",
+          "base-200": "oklch(12% 0.004 247)",
+          "base-300": "oklch(10% 0.004 247)",
+          "base-content": "oklch(98% 0.002 247)",
+          "info": "oklch(66.9% 0.179 251.2)",
+          "info-content": "oklch(100% 0 0)",
+          "success": "oklch(61.5% 0.177 145.5)",
+          "success-content": "oklch(100% 0 0)",
+          "warning": "oklch(85.4% 0.199 99.6)",
+          "warning-content": "oklch(16% 0.004 247)",
+          "error": "oklch(62.8% 0.257 27.3)",
+          "error-content": "oklch(100% 0 0)",
+          "--rounded-box": "1rem",
+          "--rounded-btn": "1.9rem",
+          "--rounded-badge": "1.9rem",
+          "--rounded-field": "0.5rem",
+          "--tab-radius": "0.5rem",
+        },
+      },
+      "light",
+      "dark"
     ],
-    
-    // Base element for CSS variables (default: ":root")
-    // root: ":root",
-    
-    // Prefix for daisyUI classes (default: "")
-    // prefix: "",
-    
-    // Enable/disable console logs (default: true)
+    darkTheme: "stitch-dark",
     logs: true,
-    
-    // Include/exclude specific components
-    // include: [], // Include only specific components
-    // exclude: [], // Exclude specific components
   },
 }

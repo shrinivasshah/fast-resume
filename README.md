@@ -1,5 +1,6 @@
 # Fast Resume - AI-Powered Resume Builder
 
+https://stitch.withgoogle.com/projects/1058076959689002461?pli=1
 Fast Resume is a modern, AI-driven application that takes the hassle out of formatting resumes. Users can upload their current resume in PDF format, choose from a variety of professionally designed templates, and let AI handle the heavy lifting of reformatting and styling their content to match the chosen template perfectly.
 
 ## Project Vision
